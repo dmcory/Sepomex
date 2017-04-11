@@ -7,6 +7,7 @@ Public Class WebApiApplication
     Protected Sub Application_Start()
         AreaRegistration.RegisterAllAreas()
         GlobalConfiguration.Configure(AddressOf WebApiConfig.Register)
+        GlobalConfiguration.Configuration.Formatters.XmlFormatter.SupportedMediaTypes.Clear()
         FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters)
         RouteConfig.RegisterRoutes(RouteTable.Routes)
         BundleConfig.RegisterBundles(BundleTable.Bundles)

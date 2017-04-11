@@ -10,7 +10,5 @@
     Public Property Clave_Municipio() As String
     Public Property Clave_Ciudad() As String
     Public Property Zona() As String
-    Public Property Created_At() As DateTime
-    Public Property Updated_At() As DateTime
 
 End Class
